@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import AuthorImage from "../../images/author_thumbnail.jpg";
 import nftImage from "../../images/nftImage.jpg";
-// does this work
+
 const ExploreItems = () => {
   return (
     <>
