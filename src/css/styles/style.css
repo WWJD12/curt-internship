@@ -12893,6 +12893,11 @@ a.read_more i {
   -webkit-border-radius: 3px;
 }
 
+.slick-slide {
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
 #selector {
   width: 500px;
   position: fixed;
