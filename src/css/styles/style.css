@@ -10184,7 +10184,7 @@ i.bg-color-secondary {
 }
 
 .d-item {
-  display: none;
+  display: block;
 }
 
 .v-center {
@@ -16651,11 +16651,12 @@ img {
 }
 
 .skeleton-box {
-  display: inline-block;
-  height: 1em;
-  position: relative;
-  overflow: hidden;
-  background-color: #dddbdd;
+  display: block;              
+  width: 100%;                 
+  background-color: #dddddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  animation: pulse 1.5s infinite;
 }
 
 .skeleton-image {
