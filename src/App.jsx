@@ -6,7 +6,7 @@ import ItemDetails from "./pages/ItemDetails";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import "./css/styles/style.css";
-import AuthorItems from "./components/author/AuthorItems";
+
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/explore" element={<Explore />} />
-        <Route path="/author/:id" element={<AuthorItems />} />
+        <Route path="/author/:id" element={<Author />} />
         <Route path="/item-details/:id" element={<ItemDetails />} />
       </Routes>
       <Footer />
