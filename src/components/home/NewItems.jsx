@@ -4,7 +4,7 @@ import axios from "axios";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+// Any Comment
 const NewItems = () => {
   const [newItems, setNewItems] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
