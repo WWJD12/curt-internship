@@ -98,7 +98,7 @@ React.useEffect(() => {
           <div className="col-lg-12">
 
             <div className="text-center">
-              <h2>New Items</h2>
+              <h2 data-aos="fade-down">New Items</h2>
               <div className="small-border bg-color-2"></div>
             </div>
           </div>
@@ -114,16 +114,17 @@ React.useEffect(() => {
                 </div>
               ))
               : newItems.map((item, index) => (
-                  <div key={index} style={{ padding: "0 10px" }}>
+                  <div key={index} style={{ padding: "0 10px" }} data-aos="fade-up" data-aos-delay={index * 100}>
                     <div className="nft__item">
                       <div className="author_list_pp">
                         <Link
                           to={`/item-details/${item.nftId}`}
                           data-bs-toggle="tooltip"
                           data-bs-placement="top"
-                          title="Creator: {item.authorName}"
+                          title={`Creator: ${item.authorName}`}
                         >
-                          <img className="lazy" src={item.nftImage} alt="" />
+                          <img className="lazy" src={item.authorImage} alt="" 
+                           />
                           <i className="fa fa-check"></i>
                         </Link>
                       </div>
