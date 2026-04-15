@@ -90,14 +90,14 @@ const HotCollections = () => {
                   </div>
                 ))
                 :
-                (collections || []).map((collection, index) => (
+                (collections || []).map((item, index) => (
                   <div key={index} style={{ padding: "10px" }}>
                     <div className="nft_coll">
 
                       <div className="nft_wrap">
-                        <Link to="/item-details">
+                        <Link to={`/item-details/${item.nftId}`}>
                           <img
-                            src={collection.nftImage}
+                            src={item.nftImage}
                             className="img-fluid"
                             alt=""
                           />
@@ -105,10 +105,10 @@ const HotCollections = () => {
                       </div>
 
                       <div className="nft_coll_pp">
-                        <Link to={`/author/${collection.authorId}`}>
+                        <Link to={`/author/${item.authorId}`}>
                           <img
                             className="pp-coll"
-                            src={collection.authorImage}
+                            src={item.authorImage}
                             alt=""
                           />
                         </Link>
@@ -116,10 +116,10 @@ const HotCollections = () => {
                       </div>
 
                       <div className="nft_coll_info">
-                        <Link to="/explore">
-                          <h4>{collection.title}</h4>
+                        <Link to={`/item-details/${item.nftId}`}>
+                          <h4>{item.title}</h4>
                         </Link>
-                        <span>ERC-{collection.code}</span>
+                        <span>ERC-{item.code}</span>
                       </div>
 
                     </div>
