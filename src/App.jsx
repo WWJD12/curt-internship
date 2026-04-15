@@ -18,7 +18,7 @@ useEffect(() => {
 
 
   return (
-    <Router>
+    <Router basename="/curt-internship">
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
