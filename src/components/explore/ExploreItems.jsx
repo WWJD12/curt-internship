@@ -50,7 +50,7 @@ function ExploreItems() {
             ))}
       </div>
 
-      <div className="col-md-12 text-center">
+      <div className="col-md-12 text-center" data-aos="fade-up" data-aos-delay="500">
         <button
           onClick={() => setVisible((prev) => prev + 4)}
           className="btn-main lead"
